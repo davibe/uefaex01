@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <com.example.uefaex1.LinearProgressView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:percent="0"
+        app:colorBg="#aaaaaa"
+        app:color1="#9C27B0"
+        app:color2="#8BC34A"
+        />
+    <com.example.uefaex1.LinearProgressView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:percent="1"
+        app:color1="#009688"
+        app:color2="#FFC107"
+        />
+    <com.example.uefaex1.LinearProgressView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:percent="10"
+        app:colorBg="#74959595"
+        app:color1="#3F51B5"
+        app:color2="#FFEB3B"
+        />
+    <com.example.uefaex1.LinearProgressView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:percent="50"
+        app:color1="#FFC107"
+        app:color2="#2196F3"
+        />
+    <com.example.uefaex1.LinearProgressView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:percent="100"
+        app:color1="#FF5722"
+        app:color2="#8BC34A"
+        />
+
+</LinearLayout>
