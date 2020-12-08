@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+
+    <com.example.uefaex1.CircularProgressView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:colorBg="#00000000"
+        app:color1="#238A29"
+        app:color2="#CA9191"
+        android:layout_margin="5dp"
+        app:percent="1" />
+
+    <com.example.uefaex1.CircularProgressView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:colorBg="#00000000"
+        app:color1="#7CE630"
+        app:color2="#2196F3"
+        android:layout_margin="5dp"
+        app:percent="25"
+        />
+
+    <com.example.uefaex1.CircularProgressView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:colorBg="#00000000"
+        app:color1="#3F51B5"
+        app:color2="#9FB6DC"
+        android:layout_margin="5dp"
+        app:percent="75"
+        />
+
+    <com.example.uefaex1.CircularProgressView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:colorBg="#00000000"
+        app:color1="#4CAF50"
+        app:color2="#812A98"
+        android:layout_margin="5dp"
+        app:percent="99"
+        />
+
+</LinearLayout>

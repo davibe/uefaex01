@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CircularProgressView">
+        <attr name="percent" format="float" />
+        <attr name="colorBg" format="color" />
+        <attr name="color1" format="color" />
+        <attr name="color2" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="LinearProgressView">
+        <attr name="percent" />
+        <attr name="colorBg" />
+        <attr name="color1" />
+        <attr name="color2" />
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <data>
+        <variable name="percent" type="Integer" />
+    </data>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ff00004B"
+    android:padding="15dp">
+
+    <com.example.uefaex1.CircularProgressView
+        android:id="@+id/progress1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.25"
+        tools:percent="25"
+        app:percentAnimated="@{ Float.valueOf(percent) }"
+        app:colorBg="#26FFFFFF"
+        app:color1="#4063FF"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@{String.valueOf(percent) + `%`, default=`25%`}"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toBottomOf="@id/progress1"
+        app:layout_constraintLeft_toLeftOf="@id/progress1"
+        app:layout_constraintRight_toRightOf="@id/progress1"
+        app:layout_constraintTop_toTopOf="@id/progress1"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Passing accuracy"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <com.example.uefaex1.CircularProgressView
+        android:id="@+id/progress2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.25"
+        tools:percent="75"
+        app:percentAnimated="@{ Float.valueOf(100 - percent) }"
+        app:colorBg="#26FFFFFF"
+        app:color1="#5AF7DC"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@{String.valueOf(100 - percent) + `%`, default=`75%`}"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toBottomOf="@id/progress2"
+        app:layout_constraintLeft_toLeftOf="@id/progress2"
+        app:layout_constraintRight_toRightOf="@id/progress2"
+        app:layout_constraintTop_toTopOf="@id/progress2"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
